@@ -1,4 +1,4 @@
-import { Avatar, Checkbox, Fieldset, ProgressBar, Tab, Tabs } from '@react95/core';
+import { Avatar,  Fieldset, ProgressBar, Tab, Tabs } from '@react95/core';
 
 function Resume() {
   return (
