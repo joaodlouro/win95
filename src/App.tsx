@@ -4,11 +4,12 @@ import WindowBar from "./components/WindowBar";
 import { useAuth } from "./store/auth";
 import DesktopIcon from "./components/DesktopIcon";
 import Contact from "./components/Contact";
-import { Amovie2, Inetcpl1313, Joy102, Wordpad, Mail, FilePen } from "@react95/icons";
+import { Amovie2, Inetcpl1313, Joy102, Wordpad, Mail, Notepad, Nwnp32FolderIcon } from "@react95/icons";
 import { Video } from "@react95/core";
 import Resume from "./components/Resume";
 import Game from "./components/Game";
 import Note from "./components/Note"
+import ImgFolder from "./components/ImgFolder";
 
 function App() {
   const authinicated = useAuth((state) => state.authinicated);
@@ -39,12 +40,12 @@ function App() {
             <DesktopIcon width={400} icon={<Mail variant="32x32_4"/>} name="Contact">
              <Contact/>
             </DesktopIcon>
-           <DesktopIcon width={500} height={400} icon={<FilePen variant="32x32_4"/>} name="Note">
+           <DesktopIcon width={500} height={400} icon={<Notepad variant="32x32_4"/>} name="Note">
            <Note />
            </DesktopIcon>
-
-
-             
+            <DesktopIcon width={500} height={400} icon={<Nwnp32FolderIcon variant="32x32_4"/>} name="ImageFolder">
+            <ImgFolder />
+           </DesktopIcon>
              
           </div>
           <WindowBar />
