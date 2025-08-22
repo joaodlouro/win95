@@ -21,6 +21,7 @@ function Shutdown({ close }: ShutdownProps) {
       close();
     } else {
       close();
+        window.location.reload();
     }
   };
 
